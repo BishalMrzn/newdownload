@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import Navbar from './component/Navbar';
+import Form from './component/Form';
 
 function App() {
   const togglebtn=()=>{
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
      <Navbar title="Aspirant" mode={mode} togglebtn={togglebtn}/>
+     <Form heading="Write your Text here"/>
     </div>
   );
 }
