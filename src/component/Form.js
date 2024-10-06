@@ -10,10 +10,10 @@ export default function Form(props) {
     }
     const[text,setText]=useState("Enter your Text")
   return (
-  <div>
+      <div className='container'>
+      <h1>{props.heading}</h1>
 
-    <h1>{props.heading}</h1>
-        <div className='container'>
+        <div className>
             <textarea className="form-control" value={text} id="mybox" onChange={handleonchange} rows="8"></textarea>
         </div> 
     <button className="btn btn-primary" onClick={handleonClick}>Change to upperCase</button>
