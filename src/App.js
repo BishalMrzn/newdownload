@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './component/Navbar';
 import Form from './component/Form';
 import Accordian from './component/Accordian';
+import About from './component/About';
 import {
   BrowserRouter,
   Route,
@@ -29,6 +30,7 @@ function App() {
 
       <Routes>
           <Route exact path="/accordian" element={<Accordian/>}></Route>
+          <Route exact path="/about" element={<About/>}></Route>
           <Route exact path="/"
             element={<Form heading="Write your Text here"/>}>
             
